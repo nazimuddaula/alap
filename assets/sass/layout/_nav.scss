@@ -1,0 +1,14 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-nav {
+  padding-top: 7rem;
+  background-color:  $base-color;
+  &__brand {
+    max-height: 8rem;
+  }
+}
