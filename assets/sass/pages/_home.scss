@@ -13,7 +13,25 @@
     top right; /* this positions the second image */
   background-repeat:
     no-repeat; /* this applies to both images */
-
+    @include respond(big-desktop){
+      background-position:
+      top left , /* this positions the first image */
+      top right; 
+    }
+    
+    @include respond(tab-land) {
+     
+      padding: 18.5rem  5rem 0;
+      background-image: url(../img/bg-2.png);
+      background-position: top right; /* this positions the second image */
+      background-repeat:no-repeat; 
+      // margin-bottom: $gutter-vertical-small;
+    }
+    @include respond(tab-port) {
+      background: none;
+      
+      // margin-bottom: $gutter-vertical-small;
+    }
   .heading-starter-button {
     border: none;
     padding: 1.5rem 3.5rem;

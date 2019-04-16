@@ -181,11 +181,18 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
+  @media (max-width: 75.5em) {
+    header {
+      padding: 0 5rem; } }
 
 .main-nav {
   padding-top: 7rem;
   background-color: #f0f0f0; }
+  @media (max-width: 75.5em) {
+    .main-nav {
+      background: transparent; } }
   .main-nav__brand {
     max-height: 8rem; }
 
@@ -238,6 +245,19 @@ header {
   /* this positions the second image */
   background-repeat: no-repeat;
   /* this applies to both images */ }
+  @media (min-width: 112.5em) {
+    .section-bg {
+      background-position: top left, top right; } }
+  @media (max-width: 75.5em) {
+    .section-bg {
+      padding: 18.5rem  5rem 0;
+      background-image: url(../img/bg-2.png);
+      background-position: top right;
+      /* this positions the second image */
+      background-repeat: no-repeat; } }
+  @media (max-width: 56.25em) {
+    .section-bg {
+      background: none; } }
   .section-bg .heading-starter-button {
     border: none;
     padding: 1.5rem 3.5rem;
