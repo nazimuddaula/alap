@@ -11,7 +11,8 @@ header {
 
 .main-nav {
   padding-top: 7rem;
-  background-color:  $base-color;
+
+  background: transparent;
   @include respond(tab-land) {
     background: transparent;
      // margin-bottom: $gutter-vertical-small;

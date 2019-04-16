@@ -189,7 +189,7 @@ header {
 
 .main-nav {
   padding-top: 7rem;
-  background-color: #f0f0f0; }
+  background: transparent; }
   @media (max-width: 75.5em) {
     .main-nav {
       background: transparent; } }
