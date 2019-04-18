@@ -33,6 +33,7 @@
       // margin-bottom: $gutter-vertical-small;
     }
   .heading-starter-button {
+    display: inline-block;
     border: none;
     padding: 1.5rem 3.5rem;
     background-color: $color-primary;
@@ -56,30 +57,8 @@
       color: $color-gray-dark-1;
       font-family: NotoSans-Bold;
       font-size: 1.2rem;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
   }
-  .identity-container {
-    .identity {
-      &__list{
-        
-      }
-      &__item{
-        display: inline-block;
-      }
-      &__link{
-        font-size: 1rem;
-        font-family: NotoSans-Regular;
-        color: #a9a9a9;
-      }
-    }
-  }
-  .version-container {
-    font-size: 1rem;
-    font-family: NotoSans-Regular;
-    color: #a9a9a9;
-    span{
-      color: #a9a9a9;
-    }
-  }
+ 
 }

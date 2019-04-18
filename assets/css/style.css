@@ -100,13 +100,13 @@ a:link, a:visited {
   margin-bottom: 9rem !important; }
 
 .u-margin-top-big {
-  margin-top: 8rem !important; }
+  margin-top: 9rem !important; }
 
 .u-margin-top-medium {
-  margin-top: 3rem !important; }
+  margin-top: 4rem !important; }
 
 .u-margin-top-small {
-  margin-top: 1.5rem !important; }
+  margin-top: 3rem !important; }
 
 .divider {
   padding: 0 4rem; }
@@ -176,6 +176,21 @@ a:link, a:visited {
       font-size: 1.2rem;
       font-weight: 300;
       color: #575757; }
+
+.identity-container .identity__item {
+  display: inline-block; }
+
+.identity-container .identity__link {
+  font-size: 1rem;
+  font-family: NotoSans-Regular;
+  color: #a9a9a9; }
+
+.version-container {
+  font-size: 1rem;
+  font-family: NotoSans-Regular;
+  color: #a9a9a9; }
+  .version-container span {
+    color: #a9a9a9; }
 
 header {
   position: absolute;
@@ -259,6 +274,7 @@ header {
     .section-bg {
       background: none; } }
   .section-bg .heading-starter-button {
+    display: inline-block;
     border: none;
     padding: 1.5rem 3.5rem;
     background-color: #bd014c;
@@ -277,16 +293,57 @@ header {
     color: #575757;
     font-family: NotoSans-Bold;
     font-size: 1.2rem;
-    margin-bottom: 4rem; }
-  .section-bg .identity-container .identity__item {
-    display: inline-block; }
-  .section-bg .identity-container .identity__link {
-    font-size: 1rem;
-    font-family: NotoSans-Regular;
-    color: #a9a9a9; }
-  .section-bg .version-container {
-    font-size: 1rem;
-    font-family: NotoSans-Regular;
-    color: #a9a9a9; }
-    .section-bg .version-container span {
-      color: #a9a9a9; }
+    margin-bottom: 3rem; }
+
+.login-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #f0f0f0;
+  background-image: url(../img/loginbg-left.png), url(../img/loginbg-right.png);
+  background-position: bottom left, bottom right;
+  /* this positions the second image */
+  background-repeat: no-repeat;
+  /* this applies to both images */ }
+  .login-section .logo {
+    max-height: 8rem; }
+
+.login__container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.login__item-container {
+  margin-top: 9.5rem;
+  height: 61rem;
+  width: 30rem;
+  text-align: center; }
+  .login__item-container .identity-container {
+    margin-top: 29rem; }
+
+.login__title {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  font-family: NotoSans-Regular;
+  color: #333333; }
+
+.login__button-container {
+  width: 100%; }
+  .login__button-container .google {
+    background-color: #df4830; }
+  .login__button-container .facebook {
+    background-color: #507cc0; }
+
+.login__button {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  font-family: NotoSans-Regular;
+  color: #fff; }
+  .login__button:not(:last-child) {
+    margin-bottom: 2rem; }
+  .login__button:focus {
+    outline: none; }
